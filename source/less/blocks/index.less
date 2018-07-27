@@ -1,0 +1,223 @@
+.header {
+  .font(70, 300, 110);
+}
+
+.page-title {
+  .reset;
+  .font(70, 300, 110);
+  padding-top: 82px;
+  padding-bottom: 160px;
+}
+
+.questionary__form {
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.questionary__form-block {
+  .reset;
+  margin-bottom: 120px;
+
+  &--last {
+    margin-bottom: 107px;
+  }
+}
+
+.questionary__title {
+  .reset;
+  .font(30, 300, 40);
+  margin-bottom: 24px;
+}
+
+.questionary__text {
+  .reset;
+  .font(20, 300, 30);
+}
+
+.questionary__nameplate {
+  .font(14, 300, 16);
+  display: none;
+  position: absolute;
+  top: 23px;
+  left: 3px;
+}
+
+.questionary__label {
+  .reset;
+  .font(20, 300, 30);
+  max-width: 270px;
+
+  &--skill {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      .square(20px);
+      top: 2px;
+      left: 5px;
+      background: @grey;
+    }
+  }
+
+  &--js {
+    max-width: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      .square(7px);
+      top: -34px;
+      left: 0;
+      background: white;
+      border: 2px solid @green;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+
+  &--js-none {
+    width: 105px;
+    margin-right: 229px;
+  }
+
+  &--js-collect {
+    max-width: 190px;
+    margin-right: 240px;
+
+    &::after {
+      left: 90px;
+    }
+  }
+
+  &--js-modify {
+    width: 200px;
+    margin-right: 153px;
+
+    &::after {
+      left: 90px;
+    }
+  }
+
+  &--js-write {
+    width: 170px;
+
+    &::after {
+      left: 160px;
+    }
+  }
+
+  &--plan {
+    position: relative;
+    margin-top: 44px;
+    margin-bottom: 30px;
+    margin-left: 3px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      .square(32px);
+      top: -43px;
+      left: 0;
+      background: white;
+      border: 2px solid @green;
+      border-radius: 50%;
+    }
+  }
+}
+
+.questionary__js:checked + .questionary__label {
+  &::after {
+    .square(17px);
+    background: @green;
+    top: -39px;
+    left: 0;
+  }
+
+  &--js-collect::after {
+    left: 83px;
+  }
+
+  &--js-modify::after {
+    left: 86px;
+  }
+
+  &--js-write::after {
+    left: 154px;
+  }
+}
+
+.questionary__plans:checked + .questionary__label--plan {
+  &::before {
+    content: "";
+    position: absolute;
+    .square(16px);
+    top: -33px;
+    left: 10px;
+    background: @green;
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
+
+.questionary__skills:checked + .questionary__label {
+  &::before {
+    background: @green;
+  }
+
+  &::after {
+    content: "+";
+    .square(14px);
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    color: black;
+  }
+}
+
+.questionary__legend {
+  .reset;
+  width: 460px;
+
+  &--js {
+    margin-bottom: 84px;
+  }
+}
+
+.btn {
+  .font(20, 300, 30);
+  border: none;
+  border-radius: 30px;
+  background-color: black;
+  padding: 10px 27px;
+  color: @green;
+}
+
+.questionary__input {
+  .font(20, 300, 110);
+  padding-top: 36px;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid @grey;
+
+  &:hover {
+    border-color: @green;
+  }
+}
+
+.questionary__input:focus + .questionary__nameplate {
+  display: block;
+}
+
+.questionary__textarea {
+  .font(20, 300, 30);
+  padding: 24px;
+  margin-top: 50px;
+  margin-bottom: 6px;
+  min-height: 322px;
+  overflow: hidden;
+}

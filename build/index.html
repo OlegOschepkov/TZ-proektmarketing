@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container__header">
+        <img src="img/logo.png" alt="Логотип Proektmarketing+1" width="191" height="24">
+      </div>
+    </header>
+
+    <div class="container container__title">
+      <h1 class="page-title">Я — разработчик</h1>
+    </div>
+
+    <section class="questionary">
+      <div class="container container__questionary">
+        <form class="questionary__form" action="server.php" method="post">
+          <fieldset class="questionary__form-block">
+            <div class="container__form-block">
+              <legend class="questionary__legend">
+                <h2 class="questionary__title with-script">Расскажите о себе</h2>
+                <span class="questionary__text">Поля не являются обязательными, но помимо вашего имени, нам бы хотелось знать из какого вы города, сколько вам лет и как с вами связаться</span>
+              </legend>
+              <div class="container__input">
+                <div class="container__aboutyou">
+                  <input type="text" class="questionary__input" id="developer-name" name="developer-about" placeholder="Имя" value="Ощепков Олег">
+                  <span class="questionary__nameplate">Имя</span>
+                </div>
+                <div class="container__aboutyou">
+                  <input type="text" class="questionary__input" id="developer-birth-year" name="developer-about" placeholder="Год рождения" value="1980">
+                  <span class="questionary__nameplate">Год рождения</span>
+                </div>
+                <div class="container__aboutyou">
+                  <input type="text" class="questionary__input" id="developer-city" name="developer-about" placeholder="Город" value="Тольятти">
+                  <span class="questionary__nameplate">Город</span>
+                </div>
+                <div class="container__aboutyou">
+                  <input type="text" class="questionary__input" id="developer-telegram" name="developer-about" placeholder="Телеграм" value="Oleg Oschepkov">
+                  <span class="questionary__nameplate">Телеграм</span>
+                </div>
+                <div class="container__aboutyou">
+                  <input type="email" class="questionary__input" id="developer-mail" name="developer-about" placeholder="Почта" value="adonayoleg@gmail.com">
+                  <span class="questionary__nameplate">Почта</span>
+                </div>
+                <div class="container__aboutyou container__aboutyou--hobby visually-hidden">
+                  <input type="text" class="questionary__input" id="developer-hobby" name="developer-about" placeholder="Ваше хобби" value="Люблю готовить, иногда читаю фантастику, статьи на научные темы">
+                  <span class="questionary__nameplate">Ваше хобби</span>
+                </div>
+                <div class="container__aboutyou container__aboutyou--photo visually-hidden">
+                  <img src="img/photo.jpg" alt="Фотография">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="questionary__form-block">
+            <div class="container__form-block">
+              <legend class="questionary__legend">
+                <h2 class="questionary__title">Отметьте ваши навыки</h2>
+                <span class="questionary__text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми
+                  гарантировано будете справляться.</span>
+              </legend>
+              <div class="container__input container__listings">
+                <div class="container__list">
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="BEM" name="developer-skills" checked="checked">
+                  <label for="BEM" class="questionary__label questionary__label--skill">БЭМ/OOCSS</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="template-engine" name="developer-skills">
+                  <label for="template-engine" class="questionary__label questionary__label--skill">Pug (Jade)</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="preprocessors" name="developer-skills" checked="checked">
+                  <label for="preprocessors" class="questionary__label questionary__label--skill">Stylus/LESS/SASS</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="SVG" name="developer-skills" checked="checked">
+                  <label for="SVG" class="questionary__label questionary__label--skill">Работаю с SVG</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="semantic" name="developer-skills" checked="checked">
+                  <label for="semantic" class="questionary__label questionary__label--skill">Верстаю семантично</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="A11Y" name="developer-skills" checked="checked">
+                  <label for="A11Y" class="questionary__label questionary__label--skill">Accessibility (A11Y)</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="ES2015/ES2016" name="developer-skills" checked="checked">
+                  <label for="ES2015/ES2016" class="questionary__label questionary__label--skill">ES2015/ES2016</label>
+                </div>
+                <div class="container__list">
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="task-manager" name="developer-skills" checked="checked">
+                  <label for="task-manager" class="questionary__label questionary__label--skill">Gulp/GRUNT</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="module-bundler" name="developer-skills">
+                  <label for="module-bundler" class="questionary__label questionary__label--skill">Webpack</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="webGL" name="developer-skills">
+                  <label for="webGL" class="questionary__label questionary__label--skill">Дружу с WebGL</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="jQuery" name="developer-skills">
+                  <label for="jQuery" class="questionary__label questionary__label--skill">jQuery</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="Angular" name="developer-skills">
+                  <label for="Angular" class="questionary__label questionary__label--skill">Знаю/изучаю Angular</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="React" name="developer-skills">
+                  <label for="React" class="questionary__label questionary__label--skill">Знаю/изучаю React</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="NodeJS" name="developer-skills">
+                  <label for="NodeJS" class="questionary__label questionary__label--skill">Знаю/изучаю Node.js</label>
+                </div>
+                <div class="container__list container__your-other-skills">
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="Git" name="developer-skills" checked="checked">
+                  <label for="Git" class="questionary__label questionary__label--skill">Использую Git</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="accurate-eye" name="developer-skills" checked="checked">
+                  <label for="accurate-eye" class="questionary__label questionary__label--skill">С глазомером всё ок</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="lazy" name="developer-skills">
+                  <label for="lazy" class="questionary__label questionary__label--skill">Я ленивый(-ая)</label>
+                  <input type="checkbox" class="questionary__skills visually-hidden" id="english-language" name="developer-skills" checked="checked">
+                  <label for="english-language" class="questionary__label questionary__label--skill">У меня хороший английский</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="questionary__form-block">
+            <div class="container__form-block container__form-block--js">
+              <legend class="questionary__legend questionary__legend--js">
+                <h2 class="questionary__title">Уровень владения Javascript</h2>
+              </legend>
+              <div class="container__input container__your-js">
+                <input type="radio" class="questionary__js visually-hidden" id="none" name="developer-js">
+                <label for="none" class="questionary__label questionary__label--js questionary__label--js-none">Не владею</label>
+                <input type="radio" class="questionary__js visually-hidden" id="collect" name="developer-js">
+                <label for="collect" class="questionary__label questionary__label--js questionary__label--js-collect">Использую готовые решения</label>
+                <input type="radio" class="questionary__js visually-hidden" id="modify" name="developer-js">
+                <label for="modify" class="questionary__label questionary__label--js questionary__label--js-modify">Использую готовые решения и умею их переделывать</label>
+                <input type="radio" class="questionary__js visually-hidden" id="write" name="developer-js" checked="checked">
+                <label for="write" class="questionary__label questionary__label--js questionary__label--js-write">Пишу сложный JS с нуля</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="questionary__form-block">
+            <div class="container__form-block">
+              <legend class="questionary__legend">
+                <h2 class="questionary__title">Расскажите о себе словами</h2>
+                <span class="questionary__text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в Proektmarketing. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</span>
+              </legend>
+              <div class="container__input container__your-freetext">
+                <textarea
+                  name="developer-freetext"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                  class="questionary__textarea"
+                  placeholder="Мои навыки соответствуют списку требований, и поэтому вакансия привлекла возможностью получения опыта и профессионального роста. У вас есть работа, я хочу и умею работать :)"></textarea>
+                <label for="textarea" class="questionary__label"></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="questionary__form-block questionary__form-block--last">
+            <div class="container__form-block">
+              <legend class="questionary__legend">
+                <h2 class="questionary__title">Какие у вас планы на будущее</h2>
+                <span class="questionary__text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются</span>
+              </legend>
+              <div class="container__input container__listings">
+                <div class="container__list">
+                  <input type="checkbox" class="questionary__plans visually-hidden" id="layout" name="developer-plans" checked="checked">
+                  <label for="layout" class="questionary__label questionary__label--plan">Верстать</label>
+                  <input type="checkbox" class="questionary__plans visually-hidden" id="manage" name="developer-plans">
+                  <label for="manage" class="questionary__label questionary__label--plan">Менеджерство</label>
+                </div>
+                <div class="container__list container__list--wide">
+                  <input type="checkbox" class="questionary__plans visually-hidden" id="frontend" name="developer-plans" checked="checked">
+                  <label for="frontend" class="questionary__label questionary__label--plan">Прокачиваться в JS</label>
+                  <input type="checkbox" class="questionary__plans visually-hidden" id="other" name="developer-plans">
+                  <label for="other" class="questionary__label questionary__label--plan">Другое (уйти в калиграфию, быть как Покрас Лампас)</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="container__btn">
+            <input type="submit" value="Отправить" class="btn btn--submit">
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  width: 1285px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+}
+
+
+.mock {
+  height: 500px;
+}
+
+.container__form-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &--js {
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 3px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      top: 137px;
+      left: 0;
+      background: @green;
+    }
+  }
+}
+
+.container__input {
+  .reset;
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+}
+
+.container__aboutyou {
+  position: relative;
+}
+
+.container__listings {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 65px;
+  padding-bottom: 4px;
+}
+
+.container__list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &--wide {
+    flex-grow: 2;
+  }
+}
+
+.container__your-other-skills {
+  margin-top: 24px;
+}
+
+.container__your-js {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.container__wide {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.container__your-plans {
+  flex-direction: row;
+}
+
+.container__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 640px;
+  margin: 0 0 0 auto;
+}
